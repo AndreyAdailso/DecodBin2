@@ -22,15 +22,25 @@ def check(bin_str):
             return False
     return True
 
-while True:     
-    print("Digite o binario que deseja converter.")
-    print(">>>", end='')
+def encryp_v(string, key):
+    pass
+
+def decryp_v(string, key):
+    pass
+
+def create_key(string, key):
+    pass
+
+if __name__ == '__main__':
+    while True:     
+        print("Digite o binario que deseja converter.")
+        print(">>>", end='')
     
-    input_bin = str(input())
+        input_bin = str(input())
     
-    if check(input_bin) == True:
-        deci_bin = bin_convert(input_bin)
-        print(input_bin,"=", deci_bin)
-        break
-    else:
-        print("Por favor Digite um número binario valido.")
+        if check(input_bin) == True:
+            deci_bin = bin_convert(input_bin)
+            print(input_bin,"=", deci_bin)
+            break
+        else:
+            print("Erro: Por favor Digite um número binario valido.")
