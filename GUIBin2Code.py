@@ -1,11 +1,11 @@
 from Bin2Code import bin_convert
-from Bin2Code import check
+from Bin2Code import check_bin
 from tkinter import *
 from functools import partial
 
 def convert():
     bin_str = box_entry.get()
-    if check(bin_str) == True:
+    if check_bin(bin_str) == True:
         box_exit["text"] = bin_convert(bin_str)
     else:
         box_exit["text"] = "Digite um número valido."
